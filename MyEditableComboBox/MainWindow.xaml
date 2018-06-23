@@ -1,0 +1,12 @@
+﻿<Window x:Class="MyEditableComboBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyEditableComboBox"
+        mc:Ignorable="d"
+        Title="MyEditableComboBox" Height="193" Width="317"  MaxHeight="193" MaxWidth="317"  MinHeight="193" MinWidth="317">
+    <Grid>
+        <ComboBox Text="{Binding NewItem, UpdateSourceTrigger=LostFocus}" SelectedItem="{Binding SelectedItem}" ItemsSource="{Binding ItemList}" IsEditable="True" Margin="70,70,0,0" HorizontalAlignment="Left" Width="169" Height="22" VerticalAlignment="Top" KeyDown="ComboBox_KeyDown" />
+    </Grid>
+</Window>
